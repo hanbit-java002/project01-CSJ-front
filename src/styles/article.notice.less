@@ -90,6 +90,7 @@ header{
 .main-contanier>div{
 	display: inline-block;
 	text-align: center;
+	vertical-align: top;
 }
 .tabs-check{
 	width: 250px;
@@ -106,27 +107,25 @@ header{
 #login{
 	background-color: #575757;
 	width: 250px;
-	height: 155px;
 	border: solid 1px black;
 }
 .login-box>ul{
 	display: inline-block;
+	margin-top: 9px;
 	vertical-align: top;
-}
-.login-box>ul{
-	margin-top: 5px;
 }
 .login-id, .login-pass{
 	width: 108px;
 	height: 20px;
 }
-.login-box{
-	margin-left: 20px;
-	margin-top: 9px;
-}
 .login-btn>li{
-	margin-left: 5px;
-	margin-top: 15px;
+	vertical-align: top;
+}
+.login-detail>li:first-child{
+	margin-bottom: 4px;
+}
+.login-btn{
+	margin-left: 3px;
 }
 .checkbox{
 	color: #a6a6a6;
@@ -158,4 +157,28 @@ header{
 .sub-box>li{
 	display: inline-block;
 	padding-right: 5px;
+}
+.tit-new-notice{
+	color: white;
+}
+.sub-banner-notice{
+	background-color: #e3e3e3;
+	vertical-align: top;
+	width: 100%;
+	position: relative;
+}
+.notice-menu{
+	margin: 19px 0 19px 19px;
+}
+.notice-menu>ul>li{
+	border-bottom: solid 1px #e3e3e3;
+	font-size: 15px;
+	font-weight: bold;
+	left: 15px;
+	padding: 0 20px;
+	background-color: white;
+}
+.sub-bnr-img{
+	margin-top: 20px;
+	vertical-align: top;
 }
