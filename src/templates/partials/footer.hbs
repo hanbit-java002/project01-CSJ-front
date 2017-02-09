@@ -15,10 +15,14 @@
 </footer>
 </div>
 
+<script>
+	var global = {
+		root: "{{root}}",
+	};
+</script>
 
-
-<script src="plugins/requirejs/require.min.js"></script>
-<script src="js/require.config.js"></script>
-<script src="js/main.js"></script>
+<script src="{{root}}/plugins/requirejs/require.min.js"></script>
+<script src="{{root}}/js/require.config.js"></script>
+<script src="{{root}}/js/{{jsName}}.js"></script>
 </body>
 </html>

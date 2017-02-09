@@ -1,0 +1,43 @@
+{{set root='..'}}
+{{> header cssName='league-ranking'}}
+<div class="sub-banner-notice">
+	<div class="notice-menu">
+		<ul>
+			<li><img src="{{root}}/img/tit_ginfo.jpg"></li>
+			<li>세계관</li>
+			<li class="active">캐릭터</li>
+			<li>게임 가이드</li>
+			<li>아이템 박스</li>
+		</ul>
+	</div>
+	<div class="sub-bnr-img" id="s1">
+		<img src="{{root}}/img/sub-banner-common01.jpg">
+	</div>
+	<div class="sub-bnr-img" id="s2">
+		<img src="{{root}}/img/sub-banner-common02.jpg">
+	</div>
+	<div class="sub-bnr-img" id="s3">
+		<img src="{{root}}/img/sub-banner-common03.jpg">
+	</div>
+	<div class="sub-bnr-img" id="s4">
+		<img src="{{root}}/img/sub-banner-common04.jpg">
+	</div>
+</div>
+</div>
+		<div class="tit-new-notice">
+			<div class="notice-title-img">
+				<img src="{{root}}/img/tit_ginfo_char.jpg" alt="공지사항">
+			</div>
+			<div class="notice-post-content">
+				<div class="search-notice">
+					<select id="search-news-or-notice">
+						<option value="title">제목</option>
+						<option value="title+contents">제목 + 내용</option>
+					</select>
+					<input type="text" class="input-search-notice" style="width: 160px; height: 21px;">
+					<input type="button" class="notice-search-btn" style="font-size: 11px; background-color: black; color: white;" value="검색">
+				</div>
+			</div>
+		</div>
+	</div>
+	{{> footer jsName='league-ranking'}}
