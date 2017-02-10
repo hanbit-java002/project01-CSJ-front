@@ -1,42 +1,71 @@
 {{set root='..'}}
 {{> header cssName='league-ranking'}}
-<div class="sub-banner-notice">
-	<div class="notice-menu">
-		<ul>
-			<li><img src="{{root}}/img/tit_ginfo.jpg"></li>
-			<li>세계관</li>
-			<li class="active">캐릭터</li>
-			<li>게임 가이드</li>
-			<li>아이템 박스</li>
-		</ul>
-	</div>
-	<div class="sub-bnr-img" id="s1">
-		<img src="{{root}}/img/sub-banner-common01.jpg">
-	</div>
-	<div class="sub-bnr-img" id="s2">
-		<img src="{{root}}/img/sub-banner-common02.jpg">
-	</div>
-	<div class="sub-bnr-img" id="s3">
-		<img src="{{root}}/img/sub-banner-common03.jpg">
-	</div>
-	<div class="sub-bnr-img" id="s4">
-		<img src="{{root}}/img/sub-banner-common04.jpg">
-	</div>
-</div>
-</div>
-		<div class="tit-new-notice">
-			<div class="notice-title-img">
-				<img src="{{root}}/img/tit_ginfo_char.jpg" alt="공지사항">
-			</div>
-			<div class="notice-post-content">
-				<div class="search-notice">
-					<select id="search-news-or-notice">
-						<option value="title">제목</option>
-						<option value="title+contents">제목 + 내용</option>
-					</select>
-					<input type="text" class="input-search-notice" style="width: 160px; height: 21px;">
-					<input type="button" class="notice-search-btn" style="font-size: 11px; background-color: black; color: white;" value="검색">
+<div class="main-container">
+	<div class="tab-p-snbr">
+		<div class="tabs-check">
+			<ul class="login-company select select-tab">
+				<li company="cy" class="active">사이푸스</li>
+				<li company="nex">넥손손</li>
+				<li company="dun">건전함</li>
+			</ul>
+			<div id="login">
+				<div class="login-box">
+					<ul class="login-detail">
+						<li><input type="text" class="login-id" maxlength="64" placeholder="아이디"></li>
+						<li><input type="text" class="login-pass" maxlength="64" placeholder="비밀번호"></li>
+					</ul>
+					<ul class="login-btn">
+						<li><input type="button" style="width: 88px;height: 50px" value="로그인"></li>
+					</ul>
 				</div>
+				<div class="checkbox">
+					<ul>
+						<li><input type="checkbox" style="margin-left: 20px" id="id-save"> <label class="id-save" for="id-save">아이디 저장</label></li>
+						<li><input type="checkbox" style="margin-left: 7px" id="key-se"> <label class="key-se" for="key-se">키보드 보안</label></li>
+					</ul>
+				</div>
+				<ul class="sub-box">
+					<li><input type="button" style="width: 100px;height: 26px; font-size: 10px" value="회원가입"></li>
+					<li><input type="button" style="width: auto;height: 26px; font-size: 8px" value="아이디|비밀번호찾기"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="sub-banner-notice">
+			<div class="notice-menu">
+				<ul>
+					<li><img src="{{root}}/img/tit-league-ranking.jpg"></li>
+					<li>리그</li>
+					<li class="active">랭킹</li>
+					<li>캐릭터 통계</li>
+					<li>전적 검색</li>
+				</ul>
+			</div>
+			<div class="sub-bnr-img" id="s1">
+				<img src="{{root}}/img/sub-banner-common01.jpg">
+			</div>
+			<div class="sub-bnr-img" id="s2">
+				<img src="{{root}}/img/sub-banner-common02.jpg">
+			</div>
+			<div class="sub-bnr-img" id="s3">
+				<img src="{{root}}/img/sub-banner-common03.jpg">
+			</div>
+			<div class="sub-bnr-img" id="s4">
+				<img src="{{root}}/img/sub-banner-common04.jpg">
+			</div>
+		</div>
+	</div>
+	<div class="tit-new-notice">
+		<div class="notice-title-img">
+			<img src="{{root}}/img/tit-le-rank.jpg" alt="리그/랭킹">
+		</div>
+		<div class="notice-post-content">
+			<div class="search-notice">
+				<select id="search-news-or-notice">
+					<option value="title">제목</option>
+					<option value="title+contents">제목 + 내용</option>
+				</select>
+				<input type="text" class="input-search-notice" style="width: 160px; height: 21px;">
+				<input type="button" class="notice-search-btn" style="font-size: 11px; background-color: black; color: white;" value="검색">
 			</div>
 		</div>
 	</div>
