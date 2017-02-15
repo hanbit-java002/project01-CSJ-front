@@ -1,5 +1,5 @@
 {{set root='..'}}
-{{> header cssName='league-ranking'}}
+{{> header cssName='game-info'}}
 <div class="main-container">
 	<div class="tab-p-snbr">
 		<div class="tabs-check">
@@ -54,17 +54,17 @@
 			</div>
 		</div>
 	</div>
-	<div class="tit-new-notice">
+	<div class="content">
 		<div class="notice-title-img">
 			<img src="{{root}}/img/tit-ginfo-char.jpg" alt="캐릭터">
 		</div>
-		<div class="notice-post-content">
-			<div class="search-notice">
-				<select id="search-news-or-notice">
-					<option value="title">제목</option>
-					<option value="title+contents">제목 + 내용</option>
-				</select>
+		<div class="char-list-wrap">
+			<div class="intro-text">
+				<p class="char-txt"><span>분류 별 보기</span>  내 성향에 맞는 사이퍼를 찾아보세요.</p>
+				<p class="char-btn"><img src="{{root}}/img/btn-char-option.gif"></p>
+			</div>
+			<div class="char-list-radio">
 			</div>
 		</div>
 	</div>
-{{> footer jsName='league-ranking'}}
+{{> footer jsName='game-info'}}
