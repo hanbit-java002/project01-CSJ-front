@@ -4,7 +4,7 @@
 require([
 	"common",
 ], function() {
-	$(".notice-menu>ul>li:first-child").on("click", function() {
+	$("#best-art").on("click", function() {
 		location.href = global.root + "/post/best/bestart.html";
 	});
 	$(".notice-menu>ul>li:nth-child(2)").on("click", function() {
@@ -31,7 +31,10 @@ require([
 	$(".notice-menu>ul>li:nth-child(9)").on("click", function() {
 		location.href = global.root + "/post/dual.html";
 	});
-	$(".notice-menu>ul>li:last-child").on("click", function() {
+	$("#af").on("click", function() {
 		location.href = global.root + "/post/afreeca/new.html";
+	});
+	$("#best-tip").on("click", function() {
+		location.href = global.root + "/post/best/besttip.html";
 	});
 });
