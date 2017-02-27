@@ -1,0 +1,31 @@
+{{set root='../..'}}
+{{> header cssName='down-game'}}
+<div class="main-container">
+	<div class="tab-p-snbr">
+		{{> login}}
+		<div class="sub-banner-notice">
+			<div class="notice-menu">
+				<img src="{{root}}/img/tit-data.jpg">
+				<ul>
+					<li>게임설치/다운로드</li>
+					<li>동영상 갤러리</li>
+					<li class="active">이미지 갤러리</li>
+					<li>보이스박스</li>
+					<li>BGM 박스</li>
+					<li>모바일 앱</li>
+				</ul>
+			</div>
+			{{> sub.banner.img}}
+		</div>
+	</div>
+	<div class="tit-new-notice">
+		<div class="notice-title-img">
+			<img src="{{root}}/img/tit_data_img.jpg" alt="이미지">
+		</div>
+		<div class="post-content">
+			<div class="search-notice">
+
+			</div>
+		</div>
+	</div>
+	{{> footer jsName='down-game'}}

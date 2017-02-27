@@ -4,6 +4,9 @@
 require([
 	"common",
 ], function() {
+	$(".notice-menu>ul>li:first-child").on("click", function() {
+		location.href = global.root + "/page/story/home.html";
+	});
 	$(".notice-menu>ul>li:nth-child(2)").on("click", function() {
 		location.href = global.root + "/game/game-info.html";
 	});
