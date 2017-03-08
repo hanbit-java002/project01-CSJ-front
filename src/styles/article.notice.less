@@ -106,7 +106,45 @@ header{
 	position: relative;
 	background-color: white;
 }
-
-.search-notice, .write-notice-btn{
+#search-news-or-notice{
+	height: 21px;
+	margin-right: 3px;
+}
+#search-news-or-notice, .search-notice, .write-notice-btn{
 	text-align: right;
+	vertical-align: top;
+}
+
+.table-article>thead>tr>th{
+	border-bottom: solid 1px black;
+	border-top: solid 1px black;
+	padding: 13px 0 12px 0;
+	font-weight: normal;
+	background: url("../img/th_divi.jpg") no-repeat;
+	text-align: center;
+	background-color: #e2e2e2;
+	background-position: right center;
+}
+.table-article>thead>tr>th:last-child{
+	background-image: none;
+	background-color: #e2e2e2;
+}
+.paging>ul{
+	vertical-align: top;
+}
+.paging>ul>li{
+	display: inline-block;
+	height: 21px;
+	border: solid 1px #ddd;
+	padding: 1px 7px 0 6px ;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+.paging>ul>li:first-child, .paging>ul>li:last-child {
+	border: none;
+}
+.paging>ul>li.active{
+	color: #d2681a;
+	border: solid 1px #d2681a;
 }

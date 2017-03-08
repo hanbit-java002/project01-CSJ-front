@@ -23,15 +23,47 @@
 			</div>
 			<div class="post-content">
 				<div class="search-notice">
-					<select id="search-news-or-notice">
+					<select id="search-news-or-notice" >
 						<option value="title">제목</option>
 						<option value="title+contents">제목 + 내용</option>
 					</select>
 					<input type="text" class="input-search-notice" style="width: 160px; height: 21px;">
 					<input type="button" class="notice-search-btn" style="font-size: 11px; background-color: black; color: white;" value="검색">
 				</div>
+				<table class="table-article" width="100%" cellpadding="0" cellspacing="0">
+					<colgroup>
+						<col width="80%">
+						<col width="10%">
+						<col width="10%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th col="scope">제목</th>
+							<th col="scope">날짜</th>
+							<th col="scope" class="col-right">조회</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+
+				</table>
 				<div class="write-notice-btn">
 					<img src="{{root}}/img/btn-wrt.jpg">
+				</div>
+				<div class="paging">
+					<ul>
+						<li><img src="{{root}}/img/paging_pre2.jpg"> </li>
+						<li class="active">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li>9</li>
+						<li cl>10</li>
+						<li><img src="{{root}}/img/paging_next2.jpg"> </li>
+					</ul>
 				</div>
 			</div>
 		</div>
