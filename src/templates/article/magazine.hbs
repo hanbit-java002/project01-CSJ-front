@@ -23,7 +23,55 @@
 		</div>
 		<div class="post-content">
 			<img src="{{root}}/img/img_mgz.jpg" alt="매거진 이미지">
+			<div class="board-event">
+				<div class="magz-select">
+					<select class="tag-search">
+						<option value="tit">전체</option>
+						<option value="디렉터노트">디렉터노트</option>
+						<option value="업데이트">업데이트</option>
+						<option value="웹툰">웹툰</option>
+						<option value="이벤트">이벤트</option>
+						<option value="인터뷰">인터뷰</option>
+						<option value="가이드">가이드</option>
+						<option value="기타">기타</option>
+					</select>
+				</div>
+				<div class="mag-post">
+				<table>
+					<colgroup>
+						<col width="20%">
+						<col width="*">
+					</colgroup>
+					<thead class="maz-head">
+						<tr>
+							<th colspan="2">
+								<ul>
+									<li class="tag"><strong>웹툰</strong></li>
+									<li>|</li>
+									<li> 내용</li>
+									<li class="date">등록일 :</li>
+								</ul>
+							</th>
+						</tr>
+					</thead>
+					<tbody class="mgz-some-txt">
+						<tr>
+							<td class="some-eve">
+								<img src="{{root}}/img/eva-some.png">
+							</td>
+							<td>
+								<ul>
+									<li class="con-eve-txt">격투가 에바 등장!<br>
+									<img src="{{root}}/img/line_event.gif"><br>
+										나에게 다가올 땐, 각오 단단히 하셔야 할걸요!
+									</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+			</div>
 		</div>
 	</div>
-
 	{{> footer jsName='article.notice'}}

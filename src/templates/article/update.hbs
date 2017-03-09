@@ -33,21 +33,27 @@
 			<div class="write-notice-btn">
 				<img src="{{root}}/img/btn-wrt.jpg">
 			</div>
-			<table class="table-upt" width="100%" cellpadding="0" cellspacing="0">
+			<table class="table-upt" width="100%">
 				<colgroup>
-					<col width="80%">
-					<col width="10%">
-					<col width="10%">
+					<col width="*">
+					<col width="5%">
 				</colgroup>
 				<thead>
 				<tr>
-					<th col="scope">제목</th>
-					<th col="scope">날짜</th>
-					<th col="scope" class="col-right">조회</th>
+					<th colspan="2">
+						<span>제목</span>
+						<span>조회수: </span>
+						<span>날짜: </span>
+						<span><img src="{{root}}/img/ico_logo.gif"> </span>
+					</th>
 				</tr>
 				</thead>
-				<tbody></tbody>
-
+				<tbody>
+					<tr>
+						<th class="upt-txt">내용요약</th>
+						<th class="btn-more"><a href="/"><img src="{{root}}/img/btn_more4.gif"></a></th>
+					</tr>
+				</tbody>
 			</table>
 			<div class="paging">
 				<ul>
