@@ -36,10 +36,11 @@ header{
 	margin-right: auto;
 	width: 1000px;
 	position: relative;
-	height: 368px;
+	height: 413px;
 }
 .game-starter{
 	z-index: 1;
+	margin-top: 36px;
 	background-image: url("../img/Game_starter.JPG");
 	background-repeat: no-repeat;
 	position: absolute;
@@ -52,7 +53,7 @@ header{
 	width: 250px;
 	height: 173px;
 	margin-left: 10px;
-	margin-top: 175px;
+	margin-top: 215px;
 }
 .login-company>li{
 	display: inline-block;
@@ -125,7 +126,6 @@ header{
 	padding-right: 5px;
 }
 .img-slide{
-	background-image: url("../img/170320-bg1.png");
 	background-size: cover;
 	width: 720px;
 	height: 408px;
@@ -145,7 +145,7 @@ header{
 	line-height: 51px;
 	font-size: 16px;
 }
-#btn-box{
+.btn-box{
 	font-size: 18px;
 	position: absolute;
 	right: 22px;
@@ -153,10 +153,10 @@ header{
 	color: white;
 	height: 20px;
 }
-#btn-box>li{
+.btn-box>li{
 	display: inline-block;
 }
-#btn-box>li:nth-child(3){
+.btn-box>li:nth-child(3){
 	padding-right: 5px;
 }
 #banner-horizon{
@@ -202,7 +202,7 @@ header{
 	border: solid 1px #e2e0e0;
 }
 .issue-img{
-	background-image: url("../img/main-left-bn1.jpg");
+	background-image: url("../img/main-left-bnr1.jpg");
 	background-size: cover;
 	height: 113px;
 	width: 228px;
@@ -509,19 +509,6 @@ header{
 .webtoon-box-title>li:first-child{
 	font-weight: bold;
 }
-.webtoon-box-title>li:nth-child(2){
-	right: 0;
-	position: absolute;
-	font-size: 11px;
-}
-.web-toon-block{
-	display: block;
-	border: solid 1px black;
-	text-align: center;
-	width: 100%;
-	padding: 20px 4px 19px 5px;
-}
-
 .fa-chevron-left, .fa-chevron-right{
 	cursor: pointer;
 }
@@ -534,7 +521,35 @@ header{
 .web-toon-title{
 	font-size: 11px;
 }
-.web-toon-block>li:nth-child(4), .web-toon-block>li:nth-child(5),
-.web-toon-block>li:nth-child(6), .web-toon-block>li:nth-child(7){
+.webtoon-box-title>li:nth-child(2){
+	right: 0;
+	position: absolute;
+	font-size: 11px;
+}
+.web-toon-img{
+	display: block;
+	border: solid 1px black;
+	text-align: center;
+	width: 100%;
+	padding: 20px 4px 19px 5px;
+	position: relative;
+	height: 224px;
+}
+.toon-thum-block{
+	position: absolute;
+}
+.toon-thum-block>li:nth-child(1){
+	background-image: url("../img/today-cypher-somenail01.jpg");
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+.toon-thum-block>li{
 	display: inline-block;
+	width: 51px;
+	height: 51px;
+	margin-left: 5px;
+}
+.selected-toon{
+	position: absolute;
+	margin-left: 5px;
 }
