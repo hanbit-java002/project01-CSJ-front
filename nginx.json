@@ -2,7 +2,7 @@
 	"server_name": [
 		"localhost.com"
 	],
-	"listen": 82,
+	"listen": 83,
 	"statics": [
 		{
 			"location": "/",
@@ -16,7 +16,7 @@
 			"backends": [
 				{
 					"address": "127.0.0.1",
-					"port": 8280
+					"port": 8088
 				}
 			]
 		}

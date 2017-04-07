@@ -1,0 +1,43 @@
+{{set root='..'}}
+{{> header cssName='article.notice'}}
+<div class="main-container">
+	<div class="tab-p-snbr">
+		{{> login}}
+		<div class="sub-banner-notice">
+			<div class="notice-menu">
+				<img src="{{root}}/img/tit_news.jpg">
+				<ul>
+					<li>공지사항</li>
+					<li>업데이트</li>
+					<li class="active">이클립스</li>
+					<li>매거진</li>
+					<li>이벤트</li>
+				</ul>
+			</div>
+			{{> sub.banner.img}}
+		</div>
+	</div>
+	<div class="tit-new-notice">
+		<div class="notice-title-img">
+			<img src="{{root}}/img/tit_news_eclipse.jpg" alt="공지사항">
+		</div>
+		<div class="post-content">
+			<div class="cp-layer-sign-up cp-layer-popup">
+				<div class="cp-popup-title">
+					회원가입 동의
+				</div>
+				<div class="cp-popup-contents">
+					<input id="cp-user-id" type="text" class="cp-input" placeholder="아이디"><br>
+					<input id="cp-user-pw" type="password" class="cp-input" placeholder="비밀번호"><br>
+					<input id="cp-user-pw-cfm" type="password" class="cp-input" placeholder="비밀번호확인">
+				</div>
+				<ul class="cp-popup-btns">
+					<li class="cp-reset">초기화</li>
+					<li id="cp-member-sign-up">가입</li>
+					<li class="cp-popup-close">취소</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+{{> footer jsName='article.notice'}}

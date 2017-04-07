@@ -40,5 +40,20 @@ require([
 		}
 	}
 
+	function optionhideshow() {
+		var flag = true;
+		$(".char-btn").on("click", function() {
+			if(flag) {
+				$(".char-btn").css("background-position-y", "100%");
+				$(".char-list-radio").show();
+			}
+			else {
+				$(".char-btn").css("background-position-y", "0%");
+				$(".char-list-radio").hide();
+			}
+			flag = !flag;
+		});
+	}
+	optionhideshow();
 	charcterthum();
 });

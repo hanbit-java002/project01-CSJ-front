@@ -22,6 +22,8 @@ require([
 		$(".img-slide").css("background-image", "url('" +
 			global.root + "/img/" + imgIndex + "')");
 
+		$(".btn-box>li:first-child").text(currentIndex + 1);
+
 		clearTimeout(timer);
 		var flag = true;
 		timer = setTimeout(function() {
@@ -42,8 +44,6 @@ require([
 			flag = !flag;
 		});
 	}
-
-	//$(".btn-box>li:first-child").prepend(rotateImg(currentIndex));
 
 	$(".btn-box>li:nth-child(3)").append(mainImgList.length);
 
@@ -73,9 +73,14 @@ require([
 		currentIndex = index;
 		var imgIndex = eventimgList[index];
 
+		$(".event-now-all>li:first-child").text(currentIndex + 1);
+
 		$(".issue-img").css("background-image", "url('" +
 			global.root + "/img/" + imgIndex + "')");
 		}
+
+		$(".event-now-all>li:nth-child(3)").append(eventimgList.length);
+
 		$(".prev-little-btn").on("click", function() {
 			issueImg(currentIndex - 1);
 		});

@@ -27,7 +27,6 @@ header{
 	position: relative;
 	z-index: 3;
 	margin: 52px auto 0 auto;
-	text-align: center;
 }
 .head-content>div{
 	display: inline-block;
@@ -113,29 +112,34 @@ header{
 	background-image: url("../img/bg_char_list_tit.jpg");
 	background-repeat: no-repeat;
 	color: white;
-	width: 670px;
+	width: 100%;
 	height: 41px;
+	position: relative;
 }
-.intro-text>p{
+.intro-text>ul{
 	padding: 12px 0 0 23px;
 	font-size: 11px;
-	display: inline-block;
-	vertical-align: top;
+	width: 100%;
+	position: relative;
 }
-.intro-text>p>span{
+.intro-text>ul>li{
 	font-size: 14px;
 	padding-right: 7px;
+	display: inline-block;
 	font-weight: bold;
 }
 .char-txt{
 	text-align: left;
 	margin-bottom: 0;
 }
-/*hover주기*/
 .char-btn{
-	height: 21px;
 	background-image: url("../img/btn-char-option.gif");
 	width: 111px;
+	height: 21px;
+	margin-bottom: 0;
+	cursor: pointer;
+	position: absolute;
+	margin-left: 200px;
 }
 .char-list-radio{
 	background-image: url("../img/bg_char_list_rdo.jpg");
@@ -143,7 +147,7 @@ header{
 	height: 172px;
 	padding: 13px 19px 0 23px;
 	z-index: 1;
-
+	display: none;
 }
 .char-type{
 	text-align: left;
@@ -158,11 +162,11 @@ header{
 .type-of-ability{
 	margin-bottom: 7px;
 }
-.type-of-diff{
+.type-of-operation{
 	margin-bottom: 7px;
 }
 
-.type-of-reach>dt, .type-of-char>dt, .type-of-ability>dt, .type-of-diff>dt{
+.type-of-reach>dt, .type-of-char>dt, .type-of-ability>dt, .type-of-operation>dt{
 	background-image: url("../img/bu_bar11.jpg");
 	background-repeat: no-repeat;
 	background-position: right;
@@ -216,20 +220,20 @@ header{
 .type-of-ability>dt, .type-of-ability>dd{
 	display: inline-block;
 }
-.type-of-diff{
+.type-of-operation{
 	margin-top: 10px !important;
 	margin-bottom: 7px;
 }
-.type-of-diff>dd{
+.type-of-operation>dd{
 	width: 82px;
 	height: 18px;
 }
-.type-of-diff>dd:nth-child(2){
+.type-of-operation>dd:nth-child(2){
 	width: 60px;
 	height: 18px;
 	vertical-align: top;
 }
-.type-of-diff>dt, .type-of-diff>dd{
+.type-of-operation>dt, .type-of-operation>dd{
 	display: inline-block;
 }
 label{
@@ -256,4 +260,5 @@ label{
 }
 .guide-basic>ul>li{
 	display: inline-block;
+	margin-right: 6px;
 }
